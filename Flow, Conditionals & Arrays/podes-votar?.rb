@@ -1,4 +1,4 @@
-puts "How aol are you?"
+puts "How old are you?"
 age= gets.chomp.to_i
 
 if age >= 18

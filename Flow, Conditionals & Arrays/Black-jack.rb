@@ -1,7 +1,7 @@
 
 #wagon_sort.rb
 def wagon_sort(students) #students es una array de strings
-  students.sort_by {|student| student.downcase } #sort_by ordena el array de strings en orden alfabético y lo devuelve en una nueva array de strings ordenada alfabéticamente sin modificar la original students array de strings original que se pasa como argumento a la función wagon_sort en la llamada. El bloque {|student| student.downcase } es un bloque de cálculo que toma un argumento student y lo convierte en su versión en minúsculas. El bloque se pasa a sort_by para que ordene los elementos de la array de strings en minúsculas.
+  students.sort_by {|student| student.downcase } #sort_by ordena el array de strings en orden alfabético y lo devuelve en una nueva array de strings ordenada alfabéticamente sin modificar la original. students array de strings original que se pasa como argumento a la función wagon_sort en la llamada. El bloque {|student| student.downcase } es un bloque de cálculo que toma un argumento student y lo convierte en su versión en minúsculas. El bloque se pasa a sort_by para que ordene los elementos de la array de strings en minúsculas.
 end
 
 
@@ -36,5 +36,5 @@ puts "Congratulations! Your Wagon has #{num_students} #{pluralize(num_students, 
 if sorted_students.size >= 2 #si la longitud de la array de strings sorted_students es mayor o igual a 2 se imprime el mensaje "Congratulations! Your Wagon has #{num_students} #{pluralize(num_students, 'student')}:" en la consola.
   puts "#{sorted_students[0..-2].join(', ')} and #{sorted_students.last}" #puts imprime el mensaje "#{sorted_students[0..-2].join(', ')} and #{sorted_students.last}" en la consola. sorted_students[0..-2] es una array de strings que contiene todos los elementos de la array de strings sorted_students excepto el último elemento. sorted_students[0..-2].join(', ') es una cadena de texto que contiene todos los elementos de la array de strings sorted_students excepto el último elemento separados por una coma y un espacio. sorted_students.last es el último elemento de la array de strings sorted_students.
 else #si la longitud de la array de strings sorted_students es menor que 2 se imprime el mensaje "Congratulations! Your Wagon has #{num_students} #{pluralize(num_students, 'student')}:" en la consola.
-  puts sorted_students.first #puts imprime el primer elemento de la array de strings sorted_students en la consola.   
+  puts sorted_students.first #puts imprime el primer elemento de la array de strings sorted_students en la consola.
 end

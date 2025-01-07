@@ -1,11 +1,11 @@
 def sum_odd_indexed(array) # es una funcion que se llama sum_odd_indexed y recibe un array de numeros enteros
   sum = 0 # se inicializa una variable sum en 0
-  array.each_with_index { |num, index| sum += num if index.odd? } # se itera sobre el array con each_with_index, se recibe el numero y el indice, si el indice es impar se suma el numero a la variable sum
-  sum # se retorna la variable
+  array.each_with_index { |num, index| sum += num if index.odd? } # se itera sobre el array con each_with_index, se recibe el numero y el indice, si el indice es impar se suma el numero a la variable sum usando el operador de suma de la clase Integer que devuelve el resultado de la suma de dos numeros enteros y se retorna la variable sum al final de la funcion sum_odd_indexed y si el indice es par y se retorna la variable sum al final de la funcion sum_odd_indexed
+  sum # se retorna la variable sum al final de la funcion sum_odd_indexed
 end
 
 def even_numbers(array) # es una funcion que se llama even_numbers y recibe un array de numeros enteros
-  array.select { |num| num.even? } # se retorna un array con los numeros pares del array original usando select y el metodo even? de la clase Integer que devuelve true si el numero es par y false si no lo es
+  array.select { |num| num.even? } # se retorna un array con los numeros pares del array original usando select y el metodo even? de la clase Integer que devuelve true si el numero es par y false si no lo es 
 end
 
 def short_words(array, max_length) # es una funcion que se llama short_words y recibe un array de strings y un numero entero max_length
